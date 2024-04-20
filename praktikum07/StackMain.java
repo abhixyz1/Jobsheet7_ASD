@@ -1,4 +1,4 @@
-package praktikum07;
+
 
 /**
  * @author Abhinaya
@@ -57,6 +57,7 @@ public class StackMain {
 
                 case 4:
                 stk.print();
+                stk.getMax();
                 break;
 
                 default:

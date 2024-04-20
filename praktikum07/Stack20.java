@@ -1,4 +1,4 @@
-package praktikum07;
+
 /**
  * @author Abhinaya
  */
@@ -75,4 +75,24 @@ public class Stack20 {
             System.out.println("Stack masih kosong");
         }
     }
+    
+    
+    public void getMax() {
+        if (!isEmpty()) {
+            double max = data[0].harga;
+            int index = 0;
+            for (int i = 1; i <= top; i++) {
+                if (data[i].harga > max) {
+                    max = data[i].harga;
+                    index = i;
+                }
+            }
+            System.out.println("Data pakaian dengan harga tertinggi: " + data[index].jenis + " " + 
+            data[index].warna + " " + data[index].merk + " " + data[index].ukuran + " " + data[index].harga);
+        } else {
+            System.out.println("Stack masih kosong");
+        }
+    }
+
+
 }
